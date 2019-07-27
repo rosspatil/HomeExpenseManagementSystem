@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.roshan.add">
+	<class name="Add" table="Expenses">
+		<id name="txn" column="txn">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="userId" column="userid" />
+		<property name="date" column="date" />
+		<property name="purpose" column="purpose" />
+		<property name="amount" column="amount" />
+		<property name="mode" column="mode"  />
+
+	</class>
+
+</hibernate-mapping>
